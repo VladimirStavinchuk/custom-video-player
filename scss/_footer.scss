@@ -1,0 +1,33 @@
+/*---------- footer ----------*/
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  vertical-align: Top;
+  color: $color-white;
+}
+
+.copyright {
+  word-spacing: 15px;
+}
+
+.rsschool {
+  padding-left: 17px;
+}
+
+.social-list {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+@media (any-pointer: fine) and (any-hover: hover) {
+  .social-link__icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  }
+}
+/*---------- end footer ----------*/

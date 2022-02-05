@@ -1,0 +1,64 @@
+/*---------- light-theme ----------*/
+.body.light-theme {
+  background-color: $color-white;
+}
+
+.body.light-theme .footer__inner {
+  background-color: $color-dark;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.body.light-theme .portfolio-tabs__btn,
+.body.light-theme .section__title,
+.body.light-theme .skills-wrap__title,
+.body.light-theme .skills-wrap__text,
+.body.light-theme .price__title,
+.body.light-theme .price__item-description {
+  color: $color-dark;
+}
+
+.body.light-theme .portfolio-tabs__btn.active {
+  color: $color-white;
+}
+
+@media (any-pointer: fine) and (any-hover: hover) {
+  .body.light-theme .portfolio-tabs__btn:hover:not(.active) {
+    border: 2px dashed;
+    color: $color-gold;
+  }
+}
+
+.body.light-theme .portfolio-tabs__btn.active {
+  color: $color-dark;
+  background-color: $color-gold;
+}
+
+.body.light-theme .btn:active {
+  font-weight: 700;
+  background-image: radial-gradient(ellipse farthest-corner at 70% 70%, $color-gold, $color-white);
+}
+
+@media (max-width: 768px) {
+  .body.light-theme .nav__list.active {
+    background-color: $color-white;
+  }
+
+  .body.light-theme .nav__list.active .nav__link {
+    color: $color-dark;
+  }
+
+  .body.light-theme:not(.open) .nav__link {
+    color: $color-white;
+  }
+
+  .body.light-theme .menu-btn.active > span,
+  .body.light-theme .menu-btn.active > span::before,
+  .body.light-theme .menu-btn.active > span::after {
+    background-color: $color-dark;
+  }
+}
+
+/*---------- end light-theme ----------*/

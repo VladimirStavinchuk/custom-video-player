@@ -1,0 +1,47 @@
+// ------------- colors --------------
+$color-dark: #000000;
+$color-gold: #bdae82;
+$color-white: #ffffff;
+$color-videoBasic: #b3b3b3;
+$color-videoProgresSlider: #ffffff;
+$color-videoProgresPlayed: #bdae82;
+$color-videoProgresNoPlayed: #b3b3b3;
+// ------------- fonts --------------
+$font-text: 20px !default;
+$font-item-text: 18px !default;
+$font-price-value: 24px !default;
+$font-price-title: 28px !default;
+$font-title: 40px !default;
+$font-big-title: 60px !default;
+$font-burger: 35px !default;
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Merriweather', serif;
+
+/* 
+    порядок определения стилей:
+1 позиционирование
+2 блочная модель (размеры, отступы)
+3 типографика (свойства шрифта)
+4 оформление (цвет фона, тень)
+5 анимация 
+*/
+
+/* 
+• порядок определения атрибутов:
+1. class
+2. id, name
+3. data-*
+4. scr, for, type, href, value
+5. title, alt
+6. role, aria-*
+*/
+
+// .body {
+//   font-family: "Inter", sans-serif;
+//   font-size: $font-text;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 40px;
+//   text-align: center;
+// }

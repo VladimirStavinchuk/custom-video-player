@@ -1,0 +1,134 @@
+/*---------- general properties ----------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.body {
+  font-family: "Inter", sans-serif;
+  font-size: $font-text;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  background-color: $color-dark;
+}
+
+.body.open {
+  overflow: hidden;
+}
+
+.body.lite-theme {
+  background-color: $color-white;
+}
+
+.container {
+  // max-width: 1440px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: $color-white;
+  overflow: hidden;
+}
+
+.section:not(:last-of-type) {
+  margin-bottom: 100px;
+}
+
+.section__title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+
+  font-family: "Merriweather", serif;
+  font-size: $font-title;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  color: $color-gold;
+}
+
+.section__title::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid $color-gold;
+  margin: auto;
+  // margin-right: 28.5%;
+  margin-right: 25%;
+  margin-left: 20px;
+}
+
+.section__title::before {
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid $color-gold;
+  margin: auto;
+  margin-right: 20px;
+  // margin-left: 28.5%;
+  margin-left: 25%;
+}
+
+.btn {
+  width: 220px;
+  height: 55px;
+  padding: 5px;
+  overflow: hidden;
+  font-size: $font-text;
+  text-align: center;
+  background-color: $color-gold;
+  color: $color-dark;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+@media (any-pointer: fine) and (any-hover: hover) {
+  .btn:hover:not(.active) {
+    color: $color-white;
+    opacity: 0.8;
+  }
+}
+.btn:active {
+  font-weight: 700;
+  background-image: radial-gradient(ellipse farthest-corner at 70% 70%, $color-gold, $color-dark);
+  border: none;
+  color: $color-dark;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+
+.link,
+.link:visited {
+  font-family: Inter;
+  font-size: $font-text;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  color: $color-white;
+}
+
+@media (any-pointer: fine) and (any-hover: hover) {
+  .link:hover {
+    color: $color-gold;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+}
+.link:active {
+  font-weight: 700;
+  color: transparent;
+}
+/*---------- end general properties ----------*/

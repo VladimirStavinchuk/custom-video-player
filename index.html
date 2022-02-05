@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
+  <title>Video player custom</title>
+</head>
+
+<body class="body">
+
+  <main class="main">
+
+    <section class="section video" id="id-video">
+      <div class="container">
+        <h2 class="section__title" data-i18="video">Video</h2>
+
+        <div class="video-player">
+
+          <div class="video-player__inner">
+
+            <video class="video-player__video" src="./assets/video/video.mp4" metadata
+              poster="./assets/img/poster/video-player.jpg">
+            </video>
+
+            <div class="video-player__controls">
+              <bution><img class="video-player__btn video-player__btn-play" src="./assets/img/svg/play.svg"
+                  alt="play/pause"></bution>
+              <input class="progress-bar__slider video-player__slider_video" type="range" min="0" max="100" value="0">
+              <bution><img class="video-player__btn video-player__btn-stop" src="./assets/img/svg/stop.svg" alt="stop">
+              </bution>
+              <bution><img class="video-player__btn video-player__btn-mute" src="./assets/img/svg/mute.svg" alt="mute">
+              </bution>
+              <input class="progress-bar__slider video-player__slider_sound" type="range" min="0" max="100" value="0">
+            </div>
+          </div>
+
+          <button class="video-player__hover-btn">
+            <img class="video-player__hover-btn-img" src="./assets/img/icon/Play_hover.svg" alt="Play hover btn">
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="copyright"><a class="link link__footer" href="https://github.com/VladimirStavinchuk" title=""
+            target="_blank">&copy; 2022 github</a>
+        </span>
+        <span class="rsschool"><a class="link link__footer" href="https://rs.school/js-stage0/"
+            title="Vladimir Stavinchuk" target="_blank">Rolling
+            Scopes School</a>
+        </span>
+        <ul class="social-list">
+          <li><a class="link social-link" href="https://www.instagram.com/" target="_blank"><img
+                class="link social-link__icon" src="./assets/img/icon/inst1.svg" alt="instagram.com"></a></li>
+          <li> <a class="link social-link" href="https://www.facebook.com/" target="_blank"><img
+                class="link social-link__icon" src="./assets/img/icon/fb1.svg" alt="facebook.com"></a></li>
+          <li> <a class="link social-link" href="https://twitter.com/" target="_blank"><img
+                class="link social-link__icon" src="./assets/img/icon/tw1.svg" alt="twitter.com"></a></li>
+          <li> <a class="link social-link" href="https://www.pinterest.ru/" target="_blank"><img
+                class="link social-link__icon" src="./assets/img/icon/pinterest1.svg" alt="pinterest.ru"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/index-video.js"></script>
+</body>
+
+</html>

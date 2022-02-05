@@ -78,6 +78,9 @@ function videoPlayerControls () {
     progressSound.addEventListener ('input', function () {
       video.volume = this.value / 100;
       progressSound.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${this.value}%, #b3b3b3 ${this.value}%, #b3b3b3 100%)`;
+      video.volume <= 0
+        ? (btnMute.src = './assets/img/svg/mute.svg')
+        : (btnMute.src = './assets/img/svg/volume.svg');
     });
   }
 
@@ -112,25 +115,15 @@ function videoPlayerControls () {
   }
 
   function onSoundVideo () {
-    console.log ('onSoundVideo saveVolumeVideo DO =  ' + saveVolumeVideo);
-    console.log ('onSoundVideo video.volume DO =  ' + video.volume);
     video.volume = saveVolumeVideo;
-    // isMute = false;
-    // btnMute.src = './assets/img/svg/volume.svg';
     changeSound (saveVolumeVideo);
-    console.log ('onSoundVideo saveVolumeVideo =  ' + saveVolumeVideo);
-    console.log ('onSoundVideo video.volume =  ' + video.volume);
-    // return saveVolumeVideo;
   }
 
   function changeSound (currentSound) {
     video.volume = currentSound;
     let currentSoundProgress = currentSound * 100;
-    // console.log ('saveVolumeVideo  ' + saveVolumeVideo);
-    // console.log ('progressVolumeVideo  ' + progressVolumeVideo);
     progressSound.value = currentSound * 100;
     progressSound.style.background = `linear-gradient(to right, #bdae82 0%, #bdae82 ${currentSoundProgress}%, #b3b3b3 ${currentSoundProgress}%, #b3b3b3 100%)`;
-    // video.volume = progressVolumeVideo / 100;
     currentSound <= 0
       ? (btnMute.src = './assets/img/svg/mute.svg')
       : (btnMute.src = './assets/img/svg/volume.svg');
